@@ -1,0 +1,69 @@
+#wrapper{
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+.circle{
+    width: 30px;
+    height: 20px;
+    position: relative;
+    @media(max-width: 470px){
+        width: 38px;
+        height: 30px;
+    }
+    @media(max-width: 375.98px){
+        width: 35px;
+        height: 28px;
+    }
+}
+.line{
+    position: absolute;
+    height: 3px;
+    width: 100%;
+    background: black;
+    border-radius: 8px;
+    transition: all cubic-bezier(0.26, 0.1, 0.27, 1.55 ) 0.35s;
+    @media(max-width: 470px){
+        height: 4px;
+    }
+}
+.top{
+    top: 0;
+    left: 0;
+}
+.middle{
+    top: 9px;
+    left: 0;
+    @media(max-width: 470px){
+        top: 12px;
+    }
+    @media(max-width: 375.98px){
+        top: 11px;
+    }
+}
+.bottom{
+    top: 18px;
+    left: 0;
+    @media(max-width: 470px){
+        top: 24px;
+    }
+    @media(max-width: 375.98px){
+        top: 22px;
+    }
+}
+.icon.close .top {
+    transform: rotate(45deg);
+    top: 48%;
+   
+}
+.icon.close .middle, .icon.close .bottom{
+    transform: rotate(-45deg);
+    top: 48%; 
+}
+.icon.close .line{
+    background: red;
+}
+.navbar-toggler{
+    outline: none !important;
+    border: none !important;
+}

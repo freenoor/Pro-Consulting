@@ -1,0 +1,160 @@
+.page-header-home, .swiper-container99{
+    height: 100vh !important;
+    @media(max-width: 991.98px){
+        height: 700px!important;
+        }
+        @media(max-width: 575.98px){
+            height: 660px!important;
+            }
+        }
+.page-header-home{
+ overflow: hidden;
+    .swiper-container99{
+        position: absolute;
+        width: 100%;
+        top: 0;
+        .swiper-slide{
+            width: 100%!important;
+            img{
+                background-repeat: no-repeat; 
+                position: absolute;
+                top: 0;
+                left: 0;
+                object-fit: cover;
+                width: 100%;
+                height: 100%;
+                background-repeat: no-repeat; 
+                position: absolute;
+                filter: brightness(.4);
+                -webkit-filter: brightness(.5);
+                object-fit: cover;
+                pointer-events: none;   
+            }
+        }
+    }
+}
+.page-header{
+    display: flex;
+    align-items: center;
+    height: 550px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    @media(min-width: 767.98px){
+        background-attachment: fixed;
+    }
+    &::after{
+        position: absolute;
+        content: '';
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.514);
+    }
+    img{
+        width: 100%;
+        height: 100%;
+        background-repeat: no-repeat; 
+        position: absolute;
+        filter: brightness(.4);
+        -webkit-filter: brightness(.5);
+        object-fit: cover;
+    }
+    .content{
+        position: relative;
+        z-index: 1;
+        color: white;
+        margin-top: 45px;
+        h2{
+            font-size: 70px;
+            text-align: center;
+            font-family: "Hachi Maru Pop";
+            @media(max-width:470px){
+                font-size: 45px;
+            }
+            @media(max-width: 375.98px){
+                font-size: 40px!important;
+            }
+        }
+        p{
+           font-size: 35px;
+           text-align: center;
+           margin-bottom: 30px;
+           font-family: "RussoOne";
+           opacity: .9;
+           max-width: 900px;
+           margin: auto;
+        }
+    }
+}
+@media(max-width:991.98px){
+    .page-header{
+        .content{
+            h2{
+                font-size: 65px;
+            }
+        }
+    }
+}
+@media(max-width:767.98px){
+    .page-header{
+        .container{
+            max-width: unset;
+        }
+        .content{
+            h2{
+                font-size: 55px;
+            }
+            p{
+                font-size: 25px;
+                margin: 0 50px;
+            }
+        }
+    }
+}
+@media(max-width:575.98px){
+    .page-header{
+        height: 650px!important;
+        .content{
+            text-align: center;
+            p{
+                font-size: 22px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+@media(max-width: 470px){
+    body{
+        .page-header-home, .swiper-container99{
+        height: 640px !important;
+        }
+    }
+    .page-header{
+        height: 433px!important;
+        .content{
+            margin-top: 30px;
+            h2{
+                font-size: 45px;
+            }
+            p{
+                font-size: 20px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+        }
+    }
+}
+@media(max-width: 320.98px){
+    body{
+        .page-header-home, .swiper-container99{
+        height: 500px !important;
+        }
+    }
+    .page-header .content {
+        margin-top: 70px;
+    }
+}

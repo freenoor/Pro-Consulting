@@ -1,0 +1,70 @@
+.titlediv-wrapp {
+  .title-intro{
+    width: 100%;
+        min-height: 32vh;
+        @media (max-width: 991.98px){
+          min-height: 28vh;
+        }
+        @media (max-width: 767.98px){
+            min-height: 20vh;
+        }
+        @media (max-width: 575.98px){
+            min-height: 12vh;
+        }
+        @media (max-width: 320.98px){
+          min-height: 10vh;
+        }
+      .title-in{
+        position: relative;
+          @media(max-width: 575.98px){
+            margin-bottom: 0;
+            padding: 0 15px;
+          }
+          h1{
+            text-align: center;
+            font-size: 180px;
+            color: #efeaea;
+            font-weight: bold;
+            @media (max-width: 991.98px){
+                font-size: 131px;
+            }
+            @media (max-width: 767.98px){
+              font-size: 100px;
+            }
+            @media (max-width: 575.98px) {
+                font-size: 83px;
+            }
+            @media(max-width: 470px){
+              font-size: 68px;
+            }
+            @media (max-width: 320.98px){
+              font-size: 60px;
+            }
+        }
+        p{
+          text-align: center;
+          font-size: 25px;
+          position: relative;
+          top: -85px;
+          color: black;
+          font-family: 'Hachi Maru Pop';
+          @media(max-width: 991.98px){
+            top: -70px;
+          }
+          @media(max-width: 767.98px){
+            top: -60px;
+            font-size: 22px;
+          }
+          @media(max-width: 575.98px){
+            top: -20px;
+          }
+          @media(max-width: 470px){
+            font-size: 20px;
+          }
+          @media (max-width: 320.98px){
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }

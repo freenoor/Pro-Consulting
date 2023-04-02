@@ -1,0 +1,98 @@
+#buttonanchor{
+            width: fit-content;
+            outline: 1px solid black;
+            background-color: black;
+        a{
+            color: white;
+            font-family: 'RussoOneb';
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 18px 35px;
+            position: relative;
+            z-index: 9999;
+            text-decoration: unset;
+        }
+    @media(max-width: 767.98px){
+        margin: 30px auto 0 !important;
+    }
+    @media(max-width: 470px){
+
+    }
+}
+.home-about{
+    .justboutus{
+        @media(max-width: 991.98px){
+            margin-left: 10px;
+        }
+        @media(max-width: 767.98px){
+            text-align: center;
+            margin-top: 45px;
+            padding-left: 0px;
+            }
+        a{
+        @media(max-width: 991.98px){
+            background-color: white!important;
+            color: black!important;
+            }
+            @media(max-width: 767.98px){
+                background-color: black!important;
+                color: white!important;
+            }
+        }
+    }
+}
+#buttonanchor{
+    position: relative;
+    overflow: hidden;  
+        z-index: 99999;
+    &:hover, :focus, :active{
+        &:before{
+            -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+            -webkit-transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            transition-timing-function: cubic-bezier(0.52, 1.64, 0.37, 0.66);
+            z-index: 1;
+        }
+        a{
+            color: black;
+        }
+    }
+    &:before{
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: white;
+        -webkit-transform: scaleX(0);
+        transform: scaleX(0);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%;
+        -webkit-transition-property: transform;
+        -webkit-transition-property: -webkit-transform;
+        transition-property: -webkit-transform;
+        transition-property: transform;
+        transition-property: transform, -webkit-transform;
+        -webkit-transition-duration: 0.5s;
+        transition-duration: 0.5s;
+        -webkit-transition-timing-function: ease-out;
+        transition-timing-function: ease-out;
+        outline: 1px solid black;
+    }
+}
+.services-section{
+    .jstserv{
+        margin: 50px auto 0 !important;
+    }
+}
+.widgetbutton{
+    margin: 0 auto 50px !important;
+    @media(max-width: 767.98px){
+        margin-bottom: 30px !important;
+    }
+    p{
+        margin: 0;
+    }
+}

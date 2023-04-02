@@ -1,0 +1,107 @@
+@import "./hamburger";
+@import "./fontface";
+@import "./navbar";
+@import "./home";
+@import "./about";
+@import "./page_header";
+@import "./services";
+@import "./contact";
+@import "./buttons";
+@import "./title";
+@import "./footer";
+@import "./testimonials";
+@import "./nectarwave";
+@import "./single-services";
+@import "./404";
+
+
+
+html, body {
+    max-width: 100% !important;
+    overflow-x: hidden;
+    scroll-behavior: smooth!important;
+    list-style-type: none;
+    appearance: none;
+}
+body{
+    &::-webkit-scrollbar{
+        width: 15px;
+    }
+    &::-webkit-scrollbar-track-piece{
+        background-color: white;
+    }
+    &::-webkit-scrollbar-thumb{
+        background-image: linear-gradient(black, black);
+        z-index: 9999;
+    }
+    &::-webkit-scrollbar-button{
+        &:single-button{
+            background-image: linear-gradient(black, black);
+    
+        }
+    }
+}
+::-moz-selection {
+    background-color: #6bbba6;
+    color: black;
+    }
+::selection {
+    background-color: #6bbba6;
+    color: black;
+    }
+.wpcf7-not-valid{
+    border-bottom: 2px solid red !important;
+    border-radius: 0!important;
+    -webkit-border-radius: 0!important;
+    -moz-border-radius: 0!important;
+    -ms-border-radius: 0!important;
+    -o-border-radius: 0!important;
+    font-family: "RussoOne";
+}
+.wpcf7-not-valid-tip{
+    display: none!important;
+}
+.wpcf7{
+    .sent{
+        .wpcf7-response-output{
+        // margin: 0!important;
+        // text-align: center;
+        // font-family: "RussoOne";
+        // border: 1px solid #398f14;
+        color: #4F8A10;
+        background-color: #DFF2BF;
+        &:before{
+            content: "\f147";
+        }
+        }       
+    }
+}
+.wpcf7-response-output{
+    margin: 20px 0 0 0!important;
+    border: 0!important;
+    padding: 10px!important;
+    &:before{
+        font: 26px/30px dashicons;
+        margin-right: 16px;
+        vertical-align: middle;
+    }
+    @media(max-width: 470px){
+        font-size: 12px!important;
+        padding: 5px!important;
+    }
+}
+.wpcf7{
+    .invalid{
+        .wpcf7-response-output{
+        // margin: 0!important;
+        // text-align: center!important;
+        // font-family: "RussoOne"!important;
+        // border: 1px solid #f7e700;
+        color: #D8000C;
+        background-color: #FFBABA;
+        &:before{
+            content: "\f158";
+        }
+        }       
+    }
+}
